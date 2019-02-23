@@ -1,0 +1,16 @@
+#drum-machine {
+  display: flex;
+  height: 200px;
+  width: 400px;
+  background-color: aqua;
+}
+#pad {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+}
+#display {
+  height: 200px;
+  width: 200px;
+  background-color: blueviolet;
+}
