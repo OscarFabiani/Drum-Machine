@@ -20,15 +20,42 @@ const c = document.getElementById('snare');
 
 const display = document.getElementById('display');
 
-q.addEventListener('click', () => {qClip.currentTime = 0; qClip.play(); display.innerText = 'Chord 1'});
-w.addEventListener('click', () => {wClip.currentTime = 0; wClip.play(); display.innerText = 'Chord 2'});
-e.addEventListener('click', () => {eClip.currentTime = 0; eClip.play(); display.innerText = 'Chord 3'});
-a.addEventListener('click', () => {aClip.currentTime = 0; aClip.play(); display.innerText = 'Clap'});
-s.addEventListener('click', () => {sClip.currentTime = 0; sClip.play(); display.innerText = 'Closed Hi-Hat'});
-d.addEventListener('click', () => {dClip.currentTime = 0; dClip.play(); display.innerText = 'Open Hi-Hat'});
-z.addEventListener('click', () => {zClip.currentTime = 0; zClip.play(); display.innerText = 'Kick Drum'});
-x.addEventListener('click', () => {xClip.currentTime = 0; xClip.play(); display.innerText = 'Side Stick'});
-c.addEventListener('click', () => {cClip.currentTime = 0; cClip.play(); display.innerText = 'Snare Drum'});
+function setQ() {qClip.currentTime = 0; qClip.play(); display.innerText = 'Chord 1'};
+function setW() {wClip.currentTime = 0; wClip.play(); display.innerText = 'Chord 2'};
+function setE() {eClip.currentTime = 0; eClip.play(); display.innerText = 'Chord 3'};
+function setA() {aClip.currentTime = 0; aClip.play(); display.innerText = 'Clap'};
+function setS() {sClip.currentTime = 0; sClip.play(); display.innerText = 'Closed Hi-Hat'};
+function setD() {dClip.currentTime = 0; dClip.play(); display.innerText = 'Open Hi-Hat'};
+function setZ() {zClip.currentTime = 0; zClip.play(); display.innerText = 'Kick Drum'};
+function setX() {xClip.currentTime = 0; xClip.play(); display.innerText = 'Side Stick'};
+function setC() {cClip.currentTime = 0; cClip.play(); display.innerText = 'Snare Drum'};
+
+function addListeners() {
+  q.addEventListener('click', setQ);
+  w.addEventListener('click', setW);
+  e.addEventListener('click', setE);
+  a.addEventListener('click', setA);
+  s.addEventListener('click', setS);
+  d.addEventListener('click', setD);
+  z.addEventListener('click', setZ);
+  x.addEventListener('click', setX);
+  c.addEventListener('click', setC);
+  document.body.addEventListener('keydown', playKey);
+}
+
+function removeListeners() {
+  q.removeEventListener('click', setQ);
+  w.removeEventListener('click', setW);
+  e.removeEventListener('click', setE);
+  a.removeEventListener('click', setA);
+  s.removeEventListener('click', setS);
+  d.removeEventListener('click', setD);
+  z.removeEventListener('click', setZ);
+  x.removeEventListener('click', setX);
+  c.removeEventListener('click', setC);
+  document.body.removeEventListener('keydown', playKey);
+}
+
 
 function playKey(k) {
   switch(k.key.toLowerCase()) { //toLowerCase() is necessary here to include capital versions of keys(shift+key)
@@ -80,4 +107,35 @@ function playKey(k) {
   }
 }
 
-document.body.addEventListener('keydown', playKey);
+
+//Power switch
+const mySwitch = document.getElementById('switch');
+const knob = document.getElementById('knob');
+
+function switchOff() {
+  knob.removeEventListener('click', switchOff);
+  mySwitch.style.justifyContent = 'flex-start';
+  knob.style.backgroundColor = 'red';
+  knob.addEventListener('click', switchOn);
+  knob.textContent = "OFF";
+  knob.style.color = 'black';
+  display.textContent = '';
+  removeListeners();
+}
+
+function switchOn() {
+  knob.removeEventListener('click', switchOn);
+  mySwitch.style.justifyContent = 'flex-end';
+  knob.style.backgroundColor = 'blue';
+  knob.addEventListener('click', switchOff);
+  knob.textContent = "ON";
+  knob.style.color = 'white';
+  display.textContent = 'Welcome';
+  addListeners();
+}
+
+switchOn();
+
+//var clone = element.cloneNode(true);
+
+//ADD STYLING, REPLICATE POWER SWITCH, AND REPLICATE VOLUME SLIDER 
