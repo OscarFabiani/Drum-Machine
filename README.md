@@ -5,7 +5,7 @@ A drum machine with an on/off switch, volume knob, display, and buttons which pr
 ## Features
 
 * Utilizes DOM manipulation with vanilla JavaScript
-* On/off switch which disables sounds effects, volume adjustment, and some styling
+* Includes on/off switch which disables sounds effects, volume adjustment, and some styling
 * Displays current sound effect, volume, welcome text, and styling indicating on/off state
 * Accepts user input for buttons, on/off switch, and volume slider.
 * Completely responsive across all devices and browsers
