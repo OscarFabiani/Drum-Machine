@@ -1,4 +1,9 @@
-
+//Variables
+$color1: #d79922;
+$color2: #efe2ba;
+$color3: #f13c20;
+$color4: #4056a1;
+$color5: #c5cbe3;
 
 //Element Styling
 
@@ -8,7 +13,9 @@ body {
   /*align-items: center;/*This continues to center the div when the viewport height is less than the div's height. I instead opted for
     margin: auto 0; on the child div(drum machine) to have the top of he div remain at the top of the viewport.*/
   height: 100vh;
-  background-color: darkslateblue;
+  background-color: $color5;
+  //background-color: rgb(250, 250, 200);
+  //background-color: rgb(202, 98, 60);
 }
 
 //Main Styling
@@ -17,7 +24,7 @@ body {
   display: flex;
   margin: auto 0;
   padding: 20px;
-  background-color: rgb(50, 105, 206);
+  background-color: $color3;
   border: 7px outset dimgray;
   border-radius: 5px;
   box-shadow: 5px 5px 10px black, 0px 0px 15px black;
@@ -36,7 +43,7 @@ body {
   width: 300px;
   padding: 20px;
   box-sizing: border-box;
-  background-color: rgb(50, 105, 206);
+  background-color: $color3;
 }
 .drum-pad {
   display: flex;
@@ -46,7 +53,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   user-select: none; /*This prevents the letters on each pad from being highlighted when clicked and dragged.*/
-  background-color: rgb(202, 98, 60);
+  background-color: $color4;
   border-radius: 8px;
   box-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
   cursor: pointer;
@@ -63,7 +70,7 @@ body {
   justify-content: center;
   height: 200px;
   width: 300px;
-  background-color: rgb(50, 105, 206);
+  background-color: $color3;
   box-sizing: border-box;
 }
 #power {
@@ -128,7 +135,7 @@ body {
   height: 35px;
   width: 15px;
   border-radius: 3px;
-  background: rgb(202, 98, 60);
+  background: $color4;
   cursor: grab;
   margin-top: -12px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
   box-shadow: 2px 2px 3px black, 0px 0px 1px black;

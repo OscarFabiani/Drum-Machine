@@ -4,13 +4,13 @@ body {
   /*align-items: center;/*This continues to center the div when the viewport height is less than the div's height. I instead opted for
     margin: auto 0; on the child div(drum machine) to have the top of he div remain at the top of the viewport.*/
   height: 100vh;
-  background-color: darkslateblue; }
+  background-color: #c5cbe3; }
 
 #drum-machine {
   display: flex;
   margin: auto 0;
   padding: 20px;
-  background-color: #3269ce;
+  background-color: #f13c20;
   border: 7px outset dimgray;
   border-radius: 5px;
   box-shadow: 5px 5px 10px black, 0px 0px 15px black; }
@@ -28,7 +28,7 @@ body {
   width: 300px;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #3269ce; }
+  background-color: #f13c20; }
 
 .drum-pad {
   display: flex;
@@ -39,7 +39,7 @@ body {
   font-weight: bold;
   user-select: none;
   /*This prevents the letters on each pad from being highlighted when clicked and dragged.*/
-  background-color: #ca623c;
+  background-color: #4056a1;
   border-radius: 8px;
   box-shadow: 4px 4px 2px black;
   cursor: pointer; }
@@ -56,7 +56,7 @@ body {
   justify-content: center;
   height: 200px;
   width: 300px;
-  background-color: #3269ce;
+  background-color: #f13c20;
   box-sizing: border-box; }
 
 #power {
@@ -127,7 +127,7 @@ body {
   height: 35px;
   width: 15px;
   border-radius: 3px;
-  background: #ca623c;
+  background: #4056a1;
   cursor: grab;
   margin-top: -12px;
   /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
