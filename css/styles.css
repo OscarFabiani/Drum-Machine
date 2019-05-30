@@ -40,6 +40,7 @@ body {
   user-select: none;
   /*This prevents the letters on each pad from being highlighted when clicked and dragged.*/
   background-color: #4056a1;
+  background-color: #ca623c;
   border-radius: 8px;
   box-shadow: 4px 4px 2px black;
   cursor: pointer; }
