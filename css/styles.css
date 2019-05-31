@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
 body {
   display: flex;
   justify-content: center;
   /*align-items: center;/*This continues to center the div when the viewport height is less than the div's height. I instead opted for
     margin: auto 0; on the child div(drum machine) to have the top of he div remain at the top of the viewport.*/
   height: 100vh;
-  background-color: #c5cbe3; }
+  background-color: #c5cbe3;
+  font-family: 'Orbitron', sans-serif; }
 
 #drum-machine {
   display: flex;
