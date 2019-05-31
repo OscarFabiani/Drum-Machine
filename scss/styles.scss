@@ -28,9 +28,9 @@ body {
   margin: auto 0;
   padding: 20px;
   background-color: $color3;
-  border: 7px outset dimgray;
+  border: 7px outset $color3;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px black, 0px 0px 15px black;
+  box-shadow: 5px 5px 10px black;
 }
 @media (max-width: 700px) {
   #drum-machine {
@@ -120,9 +120,9 @@ body {
   font-size: 20px;
   font-weight: bold;
   box-sizing: border-box;
-  border: 3px outset gray;
+  border: 3px outset $color4;
   border-radius: 4px;
-  box-shadow: 1px 1px 10px black, 2px 2px 10px inset black;
+  box-shadow: 1px 1px 5px black, 2px 2px 10px inset black;
 }
 #volume {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
