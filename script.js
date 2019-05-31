@@ -119,23 +119,23 @@ function playC() {
 //The pressed functions add the pressed class to the element while the depressed functions remove the pressed class and changes the background
 //color to it's original(unlit) color.
 function pressedQ() {q.classList.add('pressed');}
-function depressedQ() {q.classList.remove('pressed'); q.style.backgroundColor = 'rgb(202, 98, 60)'}
+function depressedQ() {q.classList.remove('pressed'); q.style.backgroundColor = '#4056a1'}
 function pressedW() {w.classList.add('pressed');}
-function depressedW() {w.classList.remove('pressed'); w.style.backgroundColor = 'rgb(202, 98, 60)'}
+function depressedW() {w.classList.remove('pressed'); w.style.backgroundColor = '#4056a1'}
 function pressedE() {e.classList.add('pressed');}
-function depressedE() {e.classList.remove('pressed'); e.style.backgroundColor = 'rgb(202, 98, 60)'}
+function depressedE() {e.classList.remove('pressed'); e.style.backgroundColor = '#4056a1'}
 function pressedA() {a.classList.add('pressed');}
-function depressedA() {a.classList.remove('pressed'); a.style.backgroundColor = 'rgb(202, 98, 60)'}
+function depressedA() {a.classList.remove('pressed'); a.style.backgroundColor = '#4056a1'}
 function pressedS() {s.classList.add('pressed');}
-function depressedS() {s.classList.remove('pressed'); s.style.backgroundColor = 'rgb(202, 98, 60)'}
+function depressedS() {s.classList.remove('pressed'); s.style.backgroundColor = '#4056a1'}
 function pressedD() {d.classList.add('pressed');}
-function depressedD() {d.classList.remove('pressed'); d.style.backgroundColor = 'rgb(202, 98, 60)'}
+function depressedD() {d.classList.remove('pressed'); d.style.backgroundColor = '#4056a1'}
 function pressedZ() {z.classList.add('pressed');}
-function depressedZ() {z.classList.remove('pressed'); z.style.backgroundColor = 'rgb(202, 98, 60)'}
+function depressedZ() {z.classList.remove('pressed'); z.style.backgroundColor = '#4056a1'}
 function pressedX() {x.classList.add('pressed');}
-function depressedX() {x.classList.remove('pressed'); x.style.backgroundColor = 'rgb(202, 98, 60)'}
+function depressedX() {x.classList.remove('pressed'); x.style.backgroundColor = '#4056a1'}
 function pressedC() {c.classList.add('pressed');}
-function depressedC() {c.classList.remove('pressed'); c.style.backgroundColor = 'rgb(202, 98, 60)'}
+function depressedC() {c.classList.remove('pressed'); c.style.backgroundColor = '#4056a1'}
 
 //Adding listeners for adding the pressed class on mousedown and removing on mouseup or mouseout.
 q.addEventListener('mousedown', pressedQ);
