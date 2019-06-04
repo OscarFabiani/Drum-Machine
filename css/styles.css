@@ -146,6 +146,10 @@ body {
   border-radius: 1px;
   box-shadow: 1px 1px 1px inset #000000, 0px 0px 1px black; }
 
+@media (min-width: 1281px) {
+  html {
+    font-size: 15px; } }
+
 @media (min-width: 481px) and (max-width: 767px) {
   #drum-machine {
     flex-direction: column; } }
