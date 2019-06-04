@@ -156,7 +156,13 @@ body {
 
 //Media Queries:
 
-@media (max-width: 700px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  #drum-machine {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
   html {
     font-size: 8px;
   }
