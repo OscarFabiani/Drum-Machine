@@ -1,4 +1,6 @@
+
 //Setting element variables
+
 //Audio elements
 const qClip = document.getElementById('Q');
 const wClip = document.getElementById('W');
@@ -9,6 +11,7 @@ const dClip = document.getElementById('D');
 const zClip = document.getElementById('Z');
 const xClip = document.getElementById('X');
 const cClip = document.getElementById('C');
+
 //Drum pad div elements
 const q = document.getElementById('chord1');
 const w = document.getElementById('chord2');
@@ -19,6 +22,7 @@ const d = document.getElementById('open-hh');
 const z = document.getElementById('kick');
 const x = document.getElementById('stick');
 const c = document.getElementById('snare');
+
 //Other div elements
 const display = document.getElementById('display');
 const pad = document.getElementById('pad');
@@ -165,6 +169,7 @@ x.addEventListener('mouseout', depressedX);
 c.addEventListener('mousedown', pressedC);
 c.addEventListener('mouseup', depressedC);
 c.addEventListener('mouseout', depressedC);
+
 
 
 //KEYBOARD FUNCTIONALITY
@@ -374,8 +379,8 @@ function switchOn() {
 switchOn();
 
 
-//UPDATE SOUND FILES
 
 //POSSIBLE IMPROVEMENTS:
 //ADD CSS BROWSER COMPTABILITY(SPECIFICALLY FOR VOLUME RANGE INPUT)
 //MAKE IT POSSIBLE TO PRESS MULTIPLE(AT LEAST 2) BUTTONS SIMULTANEOUSLY WHILE ALSO STOPPING AUDIO FROM BEING REPEATED WHEN KEY IS BEING HELD DOWN.
+//UPDATE/CHANGE SOUND FILES
